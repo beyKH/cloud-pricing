@@ -1,0 +1,211 @@
+:root{
+  --main-linear-bg-color: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+  --balck: #4A4D60;
+  --primary-color: #6D72DE;
+  --main-font:"Montserrat","Arial",sans-serif;
+  --white: #fff;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html{
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+  padding-bottom: 100px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: normal;
+  height: 100%;
+  background-color: #F7F7FE;
+  background-image: url("../img/lines.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  max-width: 1100px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* pricing */
+
+
+
+.princing-heading{
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #6E728E;
+
+}
+
+
+.pricing-cards-list  {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color: white;
+
+}
+
+.pricing-card{
+  width: 350px;
+  flex-direction: column;
+  display: flex;
+  /* align-items: center; */
+  box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+  border-radius: 10px 0px 0px 10px;
+  padding: 31px;
+}
+
+.pricing-card-premium {
+  background: var(--main-linear-bg-color);
+  border-radius: 10px;
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+
+.card-basic {
+  background-color: var(--white);
+
+}
+.card-master{
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 0;
+}
+
+.card-status-info {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #6E728E;
+  margin-bottom: 24px;
+
+}
+
+.card-status-info-premium{
+  color: white;
+}
+
+
+.card-pricing-group {
+  /* width: 206px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+
+}
+
+.card-dollar-sign {
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -1.2px;
+  text-align: center;
+  color: #4A4D60;
+}
+
+.card-price-number {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 71px;
+  letter-spacing: -2.16px;
+  color: #4A4D60;
+  margin: 0;
+  padding: 0;
+}
+
+.card-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-features-item {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #6E728E;
+  display: block;
+  border-top: 1px solid rgba(110, 114, 142, 0.199);
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.card-features-item:last-child{
+  border-bottom: 1px solid rgba(110, 114, 142, 0.199);
+  margin-bottom: 32px;
+}
+
+.card-link{
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: var(--main-linear-bg-color);
+  text-align: center;
+  color:white ;
+  border-radius: 6px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+
+.card-link:hover{
+  background: var(--white);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.white {
+  color: var(--white);
+}
+
+.card-link-premium{
+  color: #6D72DE;
+  background: var(--white);
+}
+
+.card-link-premium:hover{
+  background: var(--main-linear-bg-color);
+  color:var(--white);
+  border-color : white;
+}
